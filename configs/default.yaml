@@ -1,0 +1,14 @@
+paths:
+  sentence_encoder: "all-MiniLM-L6-v2"
+  nli_model: "cross-encoder/nli-deberta-v3-small"
+  fusion_model: "models/fusion.pkl"
+
+thresholds:
+  final_decision: 0.45
+  align_token_sim: 0.5
+
+
+weights:
+  w_cosine_inverse: 0.4
+  w_overlap_inverse: 0.2
+  w_nli_contra_delta: 0.4
